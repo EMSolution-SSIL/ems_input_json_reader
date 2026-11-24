@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emso-input"
+version = "0.1.0"
+description = "Static checks for EMSolution input.json settings"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "LicenseRef-PolyForm-Perimeter-1.0.1"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{name = "Science Solutions International Laboratory, Inc."}]
+keywords = ["EMSolution", "input.json", "JSON", "validation", "electromagnetics"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering",
+]
+
+[project.scripts]
+emso-check-input = "emso_input_checker.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/EMSolution-SSIL/ems_input_json_reader"
+Repository = "https://github.com/EMSolution-SSIL/ems_input_json_reader"
+Issues = "https://github.com/EMSolution-SSIL/ems_input_json_reader/issues"
+
+[tool.setuptools.packages.find]
+include = ["emso_input_checker*"]
