@@ -4,6 +4,15 @@ This independent, source-available Python project checks EMSolution `input.json`
 
 [日本語の説明](README_ja.md)
 
+## Related repositories
+
+| Repository | Purpose | License |
+| --- | --- | --- |
+| [EMSolution input.json checker](https://github.com/EMSolution-SSIL/ems_input_json_reader) | Statically checks input settings before running EMSolution (`emso-input`). | PolyForm Perimeter 1.0.1 (source available) |
+| [EMSolution output.json reader](https://github.com/EMSolution-SSIL/ems_output_json_reader) | Exports and plots post-processing results (`emso-post`). | MIT |
+
+These are independent Python packages; install the one needed for each task.
+
 ## Install
 
 Python 3.10 or newer is required. From this folder:
